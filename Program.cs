@@ -10,10 +10,14 @@ public class Program
 
         // Test your functions by calling them below:
         //Testing CheckForPositiveNegativeZero
-        CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
-        CheckForPositiveNegativeZero(0); // This should output: "Your number is zero"
-        CheckForPositiveNegativeZero(1); // This should output: "Your number is positive"
+        //CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
+        //CheckForPositiveNegativeZero(0); // This should output: "Your number is zero"
+        //CheckForPositiveNegativeZero(1); // This should output: "Your number is positive"
 
+        CheckForPositiveNegativeZero(-1);
+        CheckForPositiveNegativeZero(1);
+        CheckForPositiveNegativeZero(0);
+        //Further test cases
         CheckForPositiveNegativeZero(324);
         CheckForPositiveNegativeZero(-543);
 
@@ -21,7 +25,7 @@ public class Program
         FindMinimum(1, 2, 3);
         FindMinimum(2, 1, 3);
         FindMinimum(3, 2, 1);
-
+        //Further test cases
         FindMinimum(3, 3, 3);
         FindMinimum(-45, -340, 0);
         FindMinimum(4, 0, -616);
@@ -124,10 +128,10 @@ public class Program
     }
 
     public static void CheckEvenOrOdd(int number){
-        if (number % 2 == 1){
-            Console.WriteLine($"{number} is an odd number.");
-        } else if (number % 2 == 0){
+        if (number % 2 == 0){
             Console.WriteLine($"{number} is an even number.");
+        } else {
+            Console.WriteLine($"{number} is an odd number.");
         }
     }
 
